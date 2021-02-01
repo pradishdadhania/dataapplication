@@ -23,4 +23,14 @@
         android:backgroundTint="#511515"
         android:textColor="#E4B9B9"
         android:onClick="ExternalStorage" />
+
+    <Button
+        android:id="@+id/btnsqllight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="SQL light"
+        android:backgroundTint="#F13A00"
+        android:textColor="#090000"
+        android:onClick="sqllight" />
 </LinearLayout>

@@ -11,4 +11,19 @@
     <string name="back_button">Go Back</string>
     <string name="show_button_public">Public Data</string>
     <string name="show_button_private">Private Data</string>
+
+
+     <string name="enter_name">Country Name</string>
+
+    <string name="add_record">Add Record</string>
+
+    <string name="btn_update">Update</string>
+
+    <string name="btn_delete">Delete</string>
+
+    <string name="empty_list_text">No records found</string>
+
+    <string name="enter_desc">Currency</string>
+
+    <string name="enter_title">Country</string>
 </resources>

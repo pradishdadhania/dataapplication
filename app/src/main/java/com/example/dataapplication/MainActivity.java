@@ -22,4 +22,8 @@ public class MainActivity extends AppCompatActivity {
         Intent i =new Intent(MainActivity.this,ExternalStorage.class);
         startActivity(i);
     }
+    public void sqllight(View v){
+        Intent i =new Intent(MainActivity.this,CountryListActivity.class);
+        startActivity(i);
+    }
 }

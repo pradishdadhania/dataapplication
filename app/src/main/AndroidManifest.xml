@@ -12,7 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DataApplication">
-        <activity android:name=".ViewInformationActivity"></activity>
+        <activity android:name=".ModifyCountryActivity"></activity>
+        <activity android:name=".AddCountryActivity" />
+        <activity android:name=".CountryListActivity" />
+        <activity android:name=".sqllight" />
+        <activity android:name=".ViewInformationActivity" />
         <activity android:name=".ExternalStorage" />
         <activity android:name=".InternalStorageAndroid" />
         <activity android:name=".MainActivity">
