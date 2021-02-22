@@ -25,22 +25,24 @@ public class ExternalStorage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_external_storage);
+
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                EXTERNAL_STORAGE_PERMISSION_CODE);
         // findViewById return a view, we need to cast it to EditText View
         editText = (EditText) findViewById(R.id.editText_data);
     }
 
     public void savePublicly(View view) {
         // Requesting Permission to access External Storage
-        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
-                EXTERNAL_STORAGE_PERMISSION_CODE);
+
         String editTextData = editText.getText().toString();
 
         // getExternalStoragePublicDirectory() represents root of external storage, we are using DOWNLOADS
         // We can use following directories: MUSIC, PODCASTS, ALARMS, RINGTONES, NOTIFICATIONS, PICTURES, MOVIES
-        File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+        File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS);
 
-        // Storing the data in file with name as geeksData.txt
-        File file = new File(folder, "geeksData.txt");
+        // Storing the data in file with name as vasad.txt
+        File file = new File(folder, "vasad.txt");
         writeTextData(file, editTextData);
         editText.setText("");
     }
@@ -48,11 +50,11 @@ public class ExternalStorage extends AppCompatActivity {
     public void savePrivately(View view) {
         String editTextData = editText.getText().toString();
 
-        // Creating folder with name GeekForGeeks
-        File folder = getExternalFilesDir("GeeksForGeeks");
+        // Creating folder with name vasad
+        File folder = getExternalFilesDir("vasad");
 
-        // Creating file with name gfg.txt
-        File file = new File(folder, "gfg.txt");
+        // Creating file with name svit.txt
+        File file = new File(folder, "svit.txt");
         writeTextData(file, editTextData);
         editText.setText("");
     }

@@ -33,4 +33,22 @@
         android:backgroundTint="#F13A00"
         android:textColor="#090000"
         android:onClick="sqllight" />
+    <Button
+        android:id="@+id/btnPreferences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Shared Preferences"
+        android:backgroundTint="#CDDC39"
+        android:textColor="#090000"
+        android:onClick="SharedPreferences" />
+
+    <TextView
+        android:id="@+id/tvSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:text="your Name" />
+
+
 </LinearLayout>
